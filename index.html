@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>You’ve Totally Just Been Phished!</title>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet" />
   <style>
     body {
-      background: linear-gradient(135deg, #ff6ec4, #7873f5);
+      margin: 0;
+      padding: 2rem;
       font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ff6ec4, #7873f5);
       text-align: center;
       color: #fff;
-      padding: 50px;
       animation: vibe 10s infinite alternate;
+      box-sizing: border-box;
     }
 
     h1 {
-      font-size: 4rem;
-      margin-bottom: 20px;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
       text-shadow: 2px 2px #000;
     }
 
     p {
-      font-size: 1.5rem;
-      margin: 20px auto;
-      max-width: 600px;
+      font-size: 1.2rem;
+      margin: 1rem auto;
+      max-width: 90%;
+      line-height: 1.6;
     }
 
-    .gif {
-      width: 300px;
-      border: 5px dashed #fff;
+    img.gif {
+      width: 90%;
+      max-width: 300px;
+      border: 4px dashed #fff;
       border-radius: 20px;
-      margin-top: 30px;
-      box-shadow: 0 0 20px #fff;
+      margin-top: 2rem;
+      box-shadow: 0 0 15px #fff;
     }
 
     @keyframes vibe {
@@ -42,14 +47,25 @@
         background: linear-gradient(135deg, #fdd819, #e80505);
       }
     }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        max-width: 600px;
+      }
+    }
   </style>
 </head>
 <body>
   <h1>🎣 You’ve *Totally* Just Been Phished!</h1>
-  <p>Hello Tseide Krekelberg, I now own all your information.<br>
-     This is actually just an html page with no malware, (I promise). 😅</p>
-  <p><strong>Pro Tip:</strong> Don't scan random QR codes, even if there from your students.</p>
-  <img class="gif" src="https://media.giphy.com/media/l0HUpt2s9Pclgt9Vm/giphy.gif" alt="Phishing Fish">
-  <p style="margin-top:40px;">Now go forth and click wisely, internet traveler. 🧙‍♂️</p>
+  <p>Hello <strong>Tseide Krekelberg</strong>, I now own all your information.<br>
+    This is actually just an HTML page with no malware (I promise). 😅</p>
+  <p><strong>Pro Tip:</strong> Don’t scan random QR codes, even if they're from your students.</p>
+  <img class="gif" src="https://media.giphy.com/media/l0HUpt2s9Pclgt9Vm/giphy.gif" alt="Phishing Fish" />
+  <p style="margin-top: 40px;">Now go forth and click wisely, internet traveler. 🧙‍♂️</p>
 </body>
 </html>
